@@ -1,2 +1,3 @@
-# slate
-Slate jekyll theme
+# Charcoal
+
+Charcoal jekyll theme.
