@@ -1,0 +1,2 @@
+# slate
+Slate jekyll theme
