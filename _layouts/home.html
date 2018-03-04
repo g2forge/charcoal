@@ -1,0 +1,22 @@
+---
+layout: default
+---
+{{ content }}
+
+{% if site.posts.size > 0 %}
+	<h1 class="post-list-heading">{{ page.list_title | default: "Blog" }} <a href="{{ "/feed.xml" | relative_url }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#rss' | relative_url }}"></use></svg></a></h1>
+	<ul class="post-list">
+		{% for post in site.posts %}
+		<li>
+			{% assign date_format = site.charcoal.date_format | default: "%b %-d, %Y" %}
+			<span class="post-meta">{{ post.date | date: date_format }}, <a href="{{ page.author_url | default: site.author_url }}">{{ page.author_name | default: site.author_name }}</a></span>
+			<h2><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h2>
+			{% if site.show_excerpts %}
+				{{ post.excerpt }}
+			{% endif %}
+		</li>
+		{% endfor %}
+	</ul>
+    <h1>Social</h1>
+    {% include social.html %}
+{% endif %}
