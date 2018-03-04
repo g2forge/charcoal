@@ -4,7 +4,7 @@
 # Site settings
 title: Charcoal
 description: A dark theme for jekyll
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/charcoal" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Charcoal settings
@@ -19,7 +19,7 @@ excerpt_separator: "<!-- more -->"
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-charcoal
+remote_theme: jekyll-theme-charcoal
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
