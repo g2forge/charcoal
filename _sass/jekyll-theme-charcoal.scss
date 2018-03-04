@@ -3,7 +3,7 @@
 @import "rouge-base16-dark.scss";
 
 $charcoal-width: 1300px;
-$charcoal-header-height: 130px;
+$charcoal-header-height: 110px;
 
 body {
   padding:0px 0 20px 0px;
@@ -60,6 +60,14 @@ a {
   &:hover {
     color: #ffeb9b;
   }
+  
+  .social-media-list &:hover {
+    text-decoration: none;
+
+    .username {
+      text-decoration: underline;
+    }
+  }
 }
 
 a small {
@@ -69,7 +77,22 @@ a small {
   display:block;
 }
 
-ul{
+.social-media-list {
+  li + li {
+    padding-top: 5px;
+  }
+}
+
+.svg-icon {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  fill: #ffcc00;
+  padding-right: 5px;
+  vertical-align: middle;
+}
+
+ul {
   list-style-image:url('../images/bullet.png');
 }
 
@@ -156,7 +179,6 @@ dt {
   font-weight: normal;
 }
 
-
 #header {
   z-index: 100;
   left:0;
@@ -173,6 +195,7 @@ dt {
     
 	h1 {
       text-align: left;
+      line-height: 40px;
 	}
 	
 	p {
@@ -220,17 +243,6 @@ dt {
         }
       }
 
-      &.fork {
-        float: left;
-        margin-left: 0px;
-        margin-right: 6px;
-      }
-
-      &.downloads {
-        float: right;
-        margin-left: 6px;
-      }
-
       &.title {
         float: right;
         margin-right: 10px;
@@ -242,7 +254,7 @@ dt {
 
 section {
   max-width:$charcoal-width;
-  padding: 30px 0px 50px 0px;
+  padding: 10px 0px 10px 0px;
   margin: 20px 0;
   margin-top: $charcoal-header-height + 10px;
 }
@@ -250,7 +262,7 @@ section {
 #title {
   border: 0;
   outline: none;
-  margin: 0 0 50px 0;
+  margin: 0 0 30px 0;
   padding: 0 0 5px 0;
 
   h1 {
@@ -258,7 +270,7 @@ section {
     font-weight: normal;
     font-size: 40px;
     text-align: center;
-    line-height: 36px;
+    line-height: 48px;
   }
 
   p {
@@ -308,7 +320,6 @@ section {
 }
 
 @media print, screen and (max-width: 480px) {
-
   #header {
     margin-top: -20px;
   }
@@ -316,6 +327,7 @@ section {
   section {
     margin-top: 40px;
   }
+  
   nav {
     display: none;
   }

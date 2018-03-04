@@ -4,7 +4,7 @@ layout: default
 {{ content }}
 
 {% if site.posts.size > 0 %}
-	<h1 class="post-list-heading">{{ page.list_title | default: "Blog" }}</h1>
+	<h1 class="post-list-heading">{{ page.list_title | default: "Blog" }} <a href="{{ "/feed.xml" | relative_url }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#rss' | relative_url }}"></use></svg></a></h1>
 	<ul class="post-list">
 		{% for post in site.posts %}
 		<li>

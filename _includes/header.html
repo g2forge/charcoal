@@ -1,20 +1,10 @@
 <div id="header">
 	<div class="wrapper">
 		<div id="title">
-			<h1><a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | default: site.github.repository_name | escape }}</a></h1>
+			<h1><a class="site-title" rel="project" href="{{ "/" | relative_url }}">{{ site.title | default: site.github.repository_name | escape }}</a></h1>
 			<p>{{ site.description | default: site.github.project_tagline | escape }}</p>
-			<span class="credits left">Project by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></span>
+			<span class="credits left"><a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></span>
 			<span class="credits right">Hosted on GitHub Pages &mdash; <a href="https://github.com/g2forge/charcoal">Charcoal theme</a> inspired by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
 		</div>
 	</div>
-	{% if site.show_repository %}
-	<nav>
-		<li class="fork"><a href="{{ site.github.repository_url }}">Repository on GitHub</a></li>
-		{% if site.show_downloads %}
-			<li class="downloads"><a href="{{ site.github.zip_url }}">ZIP</a></li>
-			<li class="downloads"><a href="{{ site.github.tar_url }}">TAR</a></li>
-			<li class="title">DOWNLOADS</li>
-		{% endif %}
-	</nav>
-	{% endif %}
 </div>

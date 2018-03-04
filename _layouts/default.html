@@ -9,7 +9,7 @@
 					<h1>{{ page.title }}</h1>
 					<hr>
 					<span class="credits left">By <a href="{{ page.author_url | default: site.author_url }}">{{ page.author_name | default: site.author_name }}</a></span>
-					<span class="credits right">{{ page.date }}</span>
+					<span class="credits right">{{ page.date | date: date_format }}</span>
 				</div>
 
 				{{ content }}
