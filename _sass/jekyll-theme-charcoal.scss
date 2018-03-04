@@ -3,6 +3,7 @@
 @import "rouge-base16-dark.scss";
 
 $charcoal-width: 1300px;
+$charcoal-header-height: 130px;
 
 body {
   padding:0px 0 20px 0px;
@@ -160,12 +161,24 @@ dt {
   z-index: 100;
   left:0;
   top: 0px;
-  height: 60px;
+  height: $charcoal-header-height;
   width: 100%;
   position: fixed;
   background: url(../images/nav-bg.gif) #353535;
   border-bottom: 4px solid #434343;
   box-shadow: 0px 1px 3px rgba(0,0,0,.25);
+  
+  #title {
+    margin: 0 0 0 0;
+    
+	h1 {
+      text-align: left;
+	}
+	
+	p {
+      text-align: left;
+    }
+  }
 
   nav {
     max-width: $charcoal-width;
@@ -231,51 +244,49 @@ section {
   max-width:$charcoal-width;
   padding: 30px 0px 50px 0px;
   margin: 20px 0;
-  margin-top: 70px;
+  margin-top: $charcoal-header-height + 10px;
+}
 
-  #title {
-    border: 0;
-    outline: none;
-    margin: 0 0 50px 0;
-    padding: 0 0 5px 0;
+#title {
+  border: 0;
+  outline: none;
+  margin: 0 0 50px 0;
+  padding: 0 0 5px 0;
 
-    h1 {
-      font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif;
-      font-weight: normal;
-      font-size: 40px;
-      text-align: center;
-      line-height: 36px;
+  h1 {
+    font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 40px;
+    text-align: center;
+    line-height: 36px;
+  }
+
+  p {
+    color: #d7cfbe;
+    font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .credits {
+    font-size: 11px;
+    font-family: 'OpenSansRegular', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    color: #696969;
+    margin-top: -10px;
+
+    &.left {
+      float: left;
     }
 
-    p {
-      color: #d7cfbe;
-      font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif;
-      font-weight: normal;
-      font-size: 18px;
-      text-align: center;
+    &.right {
+      float: right;
     }
-
-    .credits {
-      font-size: 11px;
-      font-family: 'OpenSansRegular', "Helvetica Neue", Helvetica, Arial, sans-serif;
-      font-weight: normal;
-      color: #696969;
-      margin-top: -10px;
-
-      &.left {
-        float: left;
-      }
-
-      &.right {
-        float: right;
-      }
-    }
-
   }
 }
 
 @media print, screen and (max-width: 720px) {
-
   #title {
     .credits {
       display: block;
