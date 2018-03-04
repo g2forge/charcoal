@@ -1,13 +1,15 @@
+---
+layout: home
+title: Charcoal
+permalink: /index.html
+---
 # Charcoal
 
-Welcome to your new Jekyll theme! In this directory, you'll find the files you need to be able to package up your theme into a gem.
-Put your layouts in `_layouts`, your includes in `_includes`, your sass files in `_sass` and any other assets in `assets`.
+A dark theme for jekyll.
 
-To experiment with this code, add some sample content and run `bundle exec jekyll serve` – this directory is setup just like a Jekyll site!
+## Usage
 
-TODO: Delete this and the text above, and describe your gem
-
-## Installation
+### Installation
 
 Add this line to your Jekyll site's `Gemfile`:
 
@@ -23,33 +25,72 @@ theme: jekyll-theme-charcoal
 
 And then execute:
 
-    $ bundle
+    $ bundle install
 
-Or install it yourself as:
+### Layouts
 
-    $ gem install jekyll-theme-charcoal
+* Home
+* Default
+* Page
+* Post
 
-## Usage
+```
+author_name: Greg Gibeling
+author_url: https://github.com/gdgib/
+```
 
-TODO: Write usage instructions here. Describe your available layouts, includes, sass and/or assets.
+### Customization
+
+
+```
+author_name: Greg Gibeling
+author_url: https://github.com/gdgib/
+```
+
+```
+twitter_username: jekyllrb
+github_username:  jekyll
+dribbble_username: jekyll
+facebook_username: jekyll
+flickr_username: jekyll
+instagram_username: jekyll
+linkedin_username: jekyll
+pinterest_username: jekyll
+youtube_username: jekyll
+googleplus_username: +jekyll
+rss: rss
+
+mastodon:
+ - username: jekyll
+   instance: example.com
+ - username: jekyll2
+   instance: example.com
+```
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/hello.
-This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Issues and pull requests are welcome on [github.com/g2forge/charcoal](https://github.com/g2forge/charcoal).
 
 ## Development
 
-To set up your environment to develop this theme, run `bundle install`.
+To set up your environment to develop this theme, run:
 
-Your theme is setup just like a normal Jekyll site!
-To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`.
-This starts a Jekyll server using your theme.
-Add pages, documents, data, etc. like normal to test your theme's contents.
-As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
+```
+$ bundle install
+```
 
-When your theme is released, only the files in `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
-To add a custom directory to your theme-gem, please edit the regexp in `jekyll-theme-charcoal.gemspec` accordingly.
+In order to test your changes locally you will 
+After that you can see your handiwork by viewing this page with any modifications you've made.
+Please note that you will need to reload the page after changes as is normal with jekyll.
+
+```
+$ bundle exec jekyll serve
+```
+
+This theme is based on the following themes:
+
+* [minima](https://github.com/jekyll/minima) by [Jekyll](https://jekyllrb.com/)
+* [midnight](https://github.com/pages-themes/midnight) by [Matt Graham](https://twitter.com/michigangraham)
 
 ## License
 
