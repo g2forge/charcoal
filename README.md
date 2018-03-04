@@ -35,23 +35,28 @@ $ bundle install
 
 ### Layouts
 
-* Home
-* Default
-* Page
-* Post
+* `default` is the base layout, contianing only a header and content.
+* `home` is ideal for a landing page, as it includes not only the content, but also a blog roll with RSS link and social links as configured below.
+* `page` is currently no more than a repackaged default.
+* `post` is currently no more than a repackaged default, except that [posts](https://jekyllrb.com/docs/posts/) are indexed and listed on the `home` page. 
 
-```
+In addition to the standard jekyll front matter, the charcoal theme can use `author_name` and `author_url` to add some background information about each page or post:
+
+```yaml
 author_name: Greg Gibeling
 author_url: https://github.com/gdgib/
 ```
 
 ### Customization
 
+You can configure a default author for pages and posts in your `_config.yml`:
 
 ```
 author_name: Greg Gibeling
 author_url: https://github.com/gdgib/
 ```
+
+As [in minima](https://github.com/jekyll/minima/blob/master/README.md#social-networks) you can add links to the accounts you have on other sites, with respective icon, by adding one or more of the following options in your `_config.yml`:
 
 ```
 twitter_username: jekyllrb
