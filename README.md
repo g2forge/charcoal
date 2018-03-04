@@ -5,9 +5,12 @@ permalink: /index.html
 ---
 # Charcoal
 
-A dark theme for jekyll.
+A dark theme for [jekyll](https://jekyllrb.com/).
 
 ## Usage
+
+The theme is available as open source under the terms of the [MIT License](LICENSE.txt).
+It is distributed as a [ruby gem](https://rubygems.org/gems/jekyll-theme-charcoal).
 
 ### Installation
 
@@ -17,15 +20,18 @@ Add this line to your Jekyll site's `Gemfile`:
 gem "jekyll-theme-charcoal"
 ```
 
-And add this line to your Jekyll site's `_config.yml`:
+Add this line to your Jekyll site's `_config.yml`:
 
 ```yaml
 theme: jekyll-theme-charcoal
 ```
 
-And then execute:
+And then run:
 
-    $ bundle install
+```
+user@localhost ~/my-awesome-site
+$ bundle install
+```
 
 ### Layouts
 
@@ -76,6 +82,7 @@ Issues and pull requests are welcome on [github.com/g2forge/charcoal](https://gi
 To set up your environment to develop this theme, run:
 
 ```
+user@localhost ~/charcoal
 $ bundle install
 ```
 
@@ -84,14 +91,30 @@ After that you can see your handiwork by viewing this page with any modification
 Please note that you will need to reload the page after changes as is normal with jekyll.
 
 ```
+user@localhost ~/charcoal
 $ bundle exec jekyll serve
 ```
+
+## Build
+
+To build the gem and install it for local development testing run:
+
+```
+user@localhost ~/charcoal
+$ gem build ./jekyll-theme-charcoal.gemspec
+$ gem install ./jekyll-theme-charcoal-<VERSION>.gem
+```
+
+Once you are satisfied that this version is ready run:
+
+```
+user@localhost ~/charcoal
+$ gem push ./jekyll-theme-charcoal-<VERSION>.gem
+```
+
+## Inspiration
 
 This theme is based on the following themes:
 
 * [minima](https://github.com/jekyll/minima) by [Jekyll](https://jekyllrb.com/)
 * [midnight](https://github.com/pages-themes/midnight) by [Matt Graham](https://twitter.com/michigangraham)
-
-## License
-
-The theme is available as open source under the terms of the [MIT License](LICENSE.txt).
