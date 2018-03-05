@@ -23,7 +23,7 @@ gem "jekyll-theme-charcoal"
 Add this line to your Jekyll site's `_config.yml`:
 
 ```yaml
-theme: jekyll-theme-charcoal
+remote_theme: jekyll-theme-charcoal
 ```
 
 And then run:
