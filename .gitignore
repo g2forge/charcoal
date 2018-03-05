@@ -6,3 +6,4 @@ Gemfile.lock
 /testsite/
 /.settings/
 /.project
+/bulldozer-temp.json

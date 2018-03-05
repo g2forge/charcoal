@@ -19,7 +19,6 @@ excerpt_separator: "<!-- more -->"
 
 # Build settings
 markdown: kramdown
-remote_theme: jekyll-theme-charcoal
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
