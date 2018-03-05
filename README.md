@@ -20,10 +20,16 @@ Add this line to your Jekyll site's `Gemfile`:
 gem "jekyll-theme-charcoal"
 ```
 
-Add this line to your Jekyll site's `_config.yml`:
+If you're building a standard jekyll site (without github pages), add this line to your Jekyll site's `_config.yml`:
 
 ```yaml
-remote_theme: jekyll-theme-charcoal
+theme: jekyll-theme-charcoal
+```
+
+If instead you're using github pages, add this line to your Jekyll site's `_config.yml`:
+
+```yaml
+remote_theme: g2forge/charcoal
 ```
 
 And then run:
