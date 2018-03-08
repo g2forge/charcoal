@@ -2,12 +2,12 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-theme-charcoal"
-  spec.version       = "0.0.3"
+  spec.version       = "0.0.4"
   spec.authors       = ["Greg Gibeling"]
   spec.email         = ["gdgib@outlook.com"]
 
   spec.summary       = %q{A charcoal gray jekyll theme.}
-  spec.homepage      = "https://github.com/g2forge/charcoal"
+  spec.homepage      = "http://www.g2forge.com/charcoal/"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r{^(assets|_layouts|_includes|_sass|LICENSE|README)}i) }
