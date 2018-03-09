@@ -2,6 +2,7 @@
 @import "fonts";
 @import "rouge-base16-dark.scss";
 
+$charcoal-color-foreground: #2288ff;
 $charcoal-width: 1300px;
 $charcoal-header-height: 110px;
 
@@ -53,7 +54,7 @@ h3 {
 }
 
 a {
-  color:#ffcc00;
+  color: $charcoal-color-foreground;
   font-weight:400;
   text-decoration:none;
 
@@ -87,7 +88,7 @@ a small {
   width: 16px;
   height: 16px;
   display: inline-block;
-  fill: #ffcc00;
+  fill: $charcoal-color-foreground;
   padding-right: 5px;
   vertical-align: middle;
 }
