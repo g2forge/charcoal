@@ -12,6 +12,11 @@
 					<span class="credits right">{{ page.date | date: date_format }}</span>
 				</div>
 
+				{% if page.toc %}
+					<h1>Contents</h1>
+					{% include toc.html html=content %}
+				{% endif %}
+				
 				{{ content }}
 				
 			</section>

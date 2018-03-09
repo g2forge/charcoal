@@ -1,20 +1,21 @@
 ---
 layout: home
-title: Charcoal
+title: Charcoal Theme
 permalink: /index.html
+toc: true
 ---
 # About
 
 Charcoal is a dark theme for [jekyll](https://jekyllrb.com/).
 
-## Usage
+# Usage
 
 The theme is available as open source under the terms of the [MIT License](LICENSE.txt).
 It is distributed as a [ruby gem](https://rubygems.org/gems/jekyll-theme-charcoal).
 
 [![Gem Version](https://badge.fury.io/rb/jekyll-theme-charcoal.svg)](https://badge.fury.io/rb/jekyll-theme-charcoal)
 
-### Installation
+## Installation
 
 Add this line to your Jekyll site's `Gemfile`:
 
@@ -41,7 +42,7 @@ user@localhost ~/my-awesome-site
 $ bundle install
 ```
 
-### Layouts
+## Layouts
 
 * `default` is the base layout, contianing only a header and content.
 * `home` is ideal for a landing page, as it includes not only the content, but also a blog roll with RSS link and social links as configured below.
@@ -55,7 +56,7 @@ author_name: Greg Gibeling
 author_url: https://github.com/gdgib/
 ```
 
-### Customization
+## Customization
 
 You can configure a default author for pages and posts in your `_config.yml`:
 
@@ -86,7 +87,7 @@ mastodon:
    instance: example.com
 ```
 
-## Contributing
+# Contributing
 
 Issues and pull requests are welcome on [github.com/g2forge/charcoal](https://github.com/g2forge/charcoal).
 
@@ -125,9 +126,10 @@ user@localhost ~/charcoal
 $ gem push ./jekyll-theme-charcoal-<VERSION>.gem
 ```
 
-## Inspiration
+# Inspiration
 
-This theme is based on the following themes:
+This theme is based on the following:
 
 * [minima](https://github.com/jekyll/minima) by [Jekyll](https://jekyllrb.com/)
 * [midnight](https://github.com/pages-themes/midnight) by [Matt Graham](https://twitter.com/michigangraham)
+* [jekyll-toc](https://github.com/allejo/jekyll-toc)
