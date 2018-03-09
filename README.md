@@ -49,25 +49,26 @@ $ bundle install
 * `page` is currently no more than a repackaged default.
 * `post` is currently no more than a repackaged default, except that [posts](https://jekyllrb.com/docs/posts/) are indexed and listed on the `home` page. 
 
-In addition to the standard jekyll front matter, the charcoal theme can use `author_name` and `author_url` to add some background information about each page or post:
+In addition to the standard jekyll front matter, the charcoal theme will use the following variables on each page:
 
 ```yaml
-author_name: Greg Gibeling
-author_url: https://github.com/gdgib/
+toc: true                             # Adds a table of contents to the top of the page
+author_name: Greg Gibeling            # Sets the name of the author
+author_url: https://github.com/gdgib/ # An optional link to a page specific to the author
 ```
 
 ## Customization
 
 You can configure a default author for pages and posts in your `_config.yml`:
 
-```
-author_name: Greg Gibeling
-author_url: https://github.com/gdgib/
+```yaml
+author_name: Greg Gibeling            # Sets the name of the default author, which can be overriden on each page
+author_url: https://github.com/gdgib/ # An optional link to a page specific to the default author, can be overriden on each page
 ```
 
 As [in minima](https://github.com/jekyll/minima/blob/master/README.md#social-networks) you can add links to the accounts you have on other sites, with respective icon, by adding one or more of the following options in your `_config.yml`:
 
-```
+```yaml
 twitter_username: jekyllrb
 github_username:  jekyll
 dribbble_username: jekyll
@@ -130,6 +131,6 @@ $ gem push ./jekyll-theme-charcoal-<VERSION>.gem
 
 This theme is based on the following:
 
-* [minima](https://github.com/jekyll/minima) by [Jekyll](https://jekyllrb.com/)
-* [midnight](https://github.com/pages-themes/midnight) by [Matt Graham](https://twitter.com/michigangraham)
-* [jekyll-toc](https://github.com/allejo/jekyll-toc)
+* [midnight](https://github.com/pages-themes/midnight) by [Matt Graham](https://twitter.com/michigangraham) - design, structure, fonts, etc
+* [minima](https://github.com/jekyll/minima) by [Jekyll](https://jekyllrb.com/) - including social icons and design
+* [jekyll-toc](https://github.com/allejo/jekyll-toc) by [Vladimir Jimenez](https://github.com/allejo) - for the fancy table of contents
