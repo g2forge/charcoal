@@ -3,14 +3,16 @@ layout: home
 title: Charcoal
 permalink: /index.html
 ---
-# Charcoal
+# About
 
-A dark theme for [jekyll](https://jekyllrb.com/).
+Charcoal is a dark theme for [jekyll](https://jekyllrb.com/).
 
 ## Usage
 
 The theme is available as open source under the terms of the [MIT License](LICENSE.txt).
 It is distributed as a [ruby gem](https://rubygems.org/gems/jekyll-theme-charcoal).
+
+[![Gem Version](https://badge.fury.io/rb/jekyll-theme-charcoal.svg)](https://badge.fury.io/rb/jekyll-theme-charcoal)
 
 ### Installation
 
