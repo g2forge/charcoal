@@ -6,11 +6,12 @@ $charcoal-color-highlight:  #2288ff;
 $charcoal-color-text:       #d8d8d8;
 $charcoal-color-background: #1c1c1e;
 $charcoal-width:            1300px;
-$charcoal-header-height:    110px;
+$charcoal-header-height:    60px;
+$spacing-unit:              10px;
 
 body {
-  padding: 0px 0 20px 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   font: 14px/1.5 "OpenSansRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: $charcoal-color-text;
   font-weight: normal;
@@ -270,6 +271,29 @@ section {
   }
 }
 
+footer {
+  padding-top: 10px;
+  width: 100%;
+  background: url(../images/nav-bg.gif) lighten($charcoal-color-background, 5%);
+  border-top: 4px solid lighten($charcoal-color-background, 20%);
+  
+  .wrapper {
+  	display: flex;
+    .footer-col-1 {
+      width: -webkit-calc(20% - (#{$spacing-unit} / 2));
+      width:         calc(20% - (#{$spacing-unit} / 2));
+    }
+    .footer-col-2 {
+      width: -webkit-calc(35% - (#{$spacing-unit} / 2));
+      width:         calc(35% - (#{$spacing-unit} / 2));
+    }
+    .footer-col-3 {
+      width: -webkit-calc(45% - (#{$spacing-unit} / 2));
+      width:         calc(45% - (#{$spacing-unit} / 2));
+    }
+  }
+}
+
 @media print, screen and (max-width: 480px) {
   #header {
   	height: $charcoal-header-height - 65px;
@@ -280,4 +304,10 @@ section {
   }
   section { margin-top: $charcoal-header-height - 65px; }
   nav { display: none; }
+  footer {
+      .wrapper {
+      	flex-wrap: wrap;
+        .footer-col { width: 100%; }
+      }
+  }
 }
