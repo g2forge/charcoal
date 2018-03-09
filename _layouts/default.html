@@ -12,13 +12,18 @@
 					<span class="credits right">{{ page.date | date: date_format }}</span>
 				</div>
 
-				{% if page.toc %}
-					<h1>Contents</h1>
-					{% include toc.html html=content %}
-				{% endif %}
-				
-				{{ content }}
-				
+				<div class="content">
+					{% if page.toc %}
+						<div class="sidebar">
+							<h1>Contents</h1>
+							{% include toc.html html=content %}
+						</div>
+					{% endif %}
+					
+					<div class="main">
+						{{ content }}
+					</div>
+				</div>
 			</section>
 		</div>
 		{% include footer.html %}

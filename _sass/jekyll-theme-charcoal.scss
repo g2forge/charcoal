@@ -231,6 +231,9 @@ section {
   margin-top: $charcoal-header-height + 10px;
   
   img { max-width: 100%; }
+  
+  .content { display: flex }
+  .sidebar { flex: 20% }
 }
 
 #title {
