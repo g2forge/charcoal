@@ -1,0 +1,17 @@
+<footer>
+	<div class="content">
+	<div class="wrapper">
+		<div class="footer-col footer-col-1">
+			<h2 class="footer-heading">{{ site.title | escape }}</h2>
+		</div>
+		<div class="footer-col footer-col-2">
+			{% if site.dribbble_username or site.facebook_username or site.flickr_username or site.github_username or site.instagram_username or site.linkedin_username or site.pinterest_username or site.mastodon or site.twitter_username or site.youtube_username or site.googleplus_username or site.rss %}
+				{% include social.html %}
+			{% endif %}
+		</div>
+		<div class="footer-col footer-col-3">
+			<p>{{ site.description | escape }}</p>
+		</div>
+	</div>
+	</div>
+</footer>

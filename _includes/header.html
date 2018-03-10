@@ -1,8 +1,12 @@
 <div id="header">
 	<div class="wrapper">
 		<div id="title">
-			<h1><a class="site-title" rel="project" href="{{ "/" | relative_url }}">{{ site.title | default: site.github.repository_name | escape }}</a></h1>
-			<p>{{ site.description | default: site.github.project_tagline | escape }}</p>
+			<h1><a class="site-title" rel="project" href="{{ "/" | relative_url }}">
+				{% if site.image %}
+					<img class="site-image" src="{{ site.image }}"/>
+				{% endif %}
+				{{ site.title | default: site.github.repository_name | escape }}
+			</a></h1>
 			<span class="credits left"><a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></span>
 			<span class="credits right">Hosted on GitHub Pages &mdash; <a href="https://github.com/g2forge/charcoal">Charcoal theme</a> inspired by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
 		</div>

@@ -9,9 +9,8 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Charcoal settings
 author_name: Greg Gibeling
-author_url: https://github.com/gdgib/
-github_username: gdgib
-linkedin_username: greg-gibeling-91924676
+author_url: https://gdgib.github.io
+toc: true
 
 # Blog settings
 show_excerpts: true
