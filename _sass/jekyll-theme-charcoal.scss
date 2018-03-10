@@ -177,6 +177,8 @@ dt {
     margin: 0 0 0 0;
     
 	h1 {
+	  position: relative;
+	  z-index: 100;
       text-align: left;
       line-height: 40px;
 	}
