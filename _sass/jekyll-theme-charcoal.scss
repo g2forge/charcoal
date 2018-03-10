@@ -9,7 +9,11 @@ $charcoal-width:            1300px;
 $charcoal-header-height:    60px;
 $spacing-unit:              10px;
 
+html, body { height: 100%; }
 body {
+  display: flex;
+  flex-direction: column;
+  
   padding: 0;
   margin: 0;
   font: 14px/1.5 "OpenSansRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -17,6 +21,7 @@ body {
   font-weight: normal;
   background: $charcoal-color-background;
 }
+.nonfooter { flex: 1 0 auto; }
 
 p, table, pre, ul, ol, dl {
   margin: 0 0 20px;
@@ -32,6 +37,9 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 10px;
   font-family: 'OpenSansRegular', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
+  
+  border-top: $charcoal-header-height + 10px solid transparent;
+  margin-top: -$charcoal-header-height - 10px;
 }
 h1, h2, h3 { line-height: 1.1; }
 h1         { font-size: 28px; }
@@ -59,15 +67,15 @@ a small {
 
 .social-media-list {
   li + li { padding-top: 5px; }
-  
-  .svg-icon {
-    width: 16px;
-    height: 16px;
-    display: inline-block;
-    fill: $charcoal-color-highlight;
-    padding-right: 2px;
-    vertical-align: middle;
-  }
+}
+
+.svg-icon {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  fill: $charcoal-color-highlight;
+  padding-right: 2px;
+  vertical-align: middle;
 }
 
 ul {
@@ -272,6 +280,7 @@ section {
 }
 
 footer {
+  flex-shrink: 0;
   padding-top: 10px;
   width: 100%;
   background: url(../images/nav-bg.gif) lighten($charcoal-color-background, 5%);
