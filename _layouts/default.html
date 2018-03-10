@@ -9,17 +9,19 @@
 					<div id="title">
 						<h1>{{ page.title }}</h1>
 						<hr>
+						{% unless page.bare %}
 						<span class="credits left">By <a href="{{ page.author_url | default: site.author_url }}">{{ page.author_name | default: site.author_name }}</a></span>
 						<span class="credits right">{{ page.date | date: date_format }}</span>
+						{% endunless %}
 					</div>
 	
 					<div class="content">
-						{% if page.toc %}
+						{% unless page.bare %}{% assign generate_toc = page.toc | default: site.toc %}{% if generate_toc %}
 							<div class="sidebar">
 								<h1 id="contents">Contents</h1>
 								{% include toc.html html=content %}
 							</div>
-						{% endif %}
+						{% endif %}{% endunless %}
 						
 						<div class="main">
 							{{ content }}
