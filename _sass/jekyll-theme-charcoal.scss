@@ -33,13 +33,13 @@ ul, ol, dl {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  position: relative;
+  z-index: -1;
   color: lighten($charcoal-color-text, 20%);
-  margin: 0 0 10px;
+  padding-top: $charcoal-header-height + 10px;
+  margin: -$charcoal-header-height - 10px 0 10px;
   font-family: 'OpenSansRegular', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
-  
-  border-top: $charcoal-header-height + 10px solid transparent;
-  margin-top: -$charcoal-header-height - 10px;
 }
 h1, h2, h3 { line-height: 1.1; }
 h1         { font-size: 28px; }
@@ -241,8 +241,8 @@ section {
   
   img { max-width: 100%; }
   
-  .content { display: flex }
-  .sidebar { flex: 20% }
+  .content { display: flex; }
+  .sidebar { flex: 20%; }
 }
 
 #title {
@@ -280,6 +280,7 @@ section {
 }
 
 footer {
+  z-index: -3;
   flex-shrink: 0;
   padding-top: 10px;
   width: 100%;
