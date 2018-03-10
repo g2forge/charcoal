@@ -303,6 +303,18 @@ footer {
   }
 }
 
+.about_image {
+  display: flex;
+  align-items: center;
+  
+  .about_image_col { float: left; }
+  .about_image_content { margin-left: 20px; }
+  .about_image_image {
+    width: 200px;
+    border-radius: 15px;
+  }
+}
+
 @media print, screen and (max-width: 480px) {
   #header {
   	height: $charcoal-header-height - 65px;
