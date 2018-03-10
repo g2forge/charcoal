@@ -67,6 +67,7 @@ Ours is configured to display in the most friendly manner.
 You can configure a default author for pages and posts in your `_config.yml`:
 
 ```yaml
+image: /images/image.jpg              # Adds a small thumbnail image to the site header (a picture or logo)
 toc: true                             # Sets whether to adds a table of contents to the left sidebar of the page by default
 author_name: Greg Gibeling            # Sets the name of the default author, which can be overriden on each page
 author_url: https://github.com/gdgib/ # An optional link to a page specific to the default author, can be overriden on each page
