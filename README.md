@@ -135,14 +135,15 @@ user@localhost ~/charcoal
 $ bundle install
 ```
 
-In order to test your changes locally you will 
-After that you can see your handiwork by viewing this page with any modifications you've made.
-Please note that you will need to reload the page after changes as is normal with jekyll.
+In order to test your changes locally run:
 
 ```
 user@localhost ~/charcoal
 $ bundle exec jekyll serve
 ```
+
+After that you can see your handiwork by viewing this page with any modifications you've made.
+Please note that you will need to reload the page after changes as is normal with jekyll.
 
 ## Build
 
