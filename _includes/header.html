@@ -3,7 +3,7 @@
 		<div id="title">
 			<h1><a class="site-title" rel="project" href="{{ "/" | relative_url }}">
 				{% if site.image %}
-					<img class="site-image" src="{{ site.image }}"/>
+					<img class="site-image" src="{{ site.image | prepend:site.baseurl }}"/>
 				{% endif %}
 				{{ site.title | default: site.github.repository_name | escape }}
 			</a></h1>
