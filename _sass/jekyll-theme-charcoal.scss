@@ -340,18 +340,56 @@ footer {
 
 @media print, screen and (max-width: 480px) {
   #header {
-    height: $charcoal-header-height - 65px;
+    position: static;
+    height: $charcoal-header-height - 10px;
+    width: 100%;
+    
+    h1, h2, h3, h4, h5, h6 {
+      position: static;
+      z-index: 0;
+      padding-top: 0;
+      margin: 0;
+    }
+    
     #title {
-      p { display: none; }
+      margin: 0 0 0 0;
+      h1 {
+        position: static;
+        text-align: left;
+        line-height: 40px;
+      }
       .credits { display: none; }
+      p { display: none; }
+      nav { display: none; }
     }
   }
-  section { margin-top: $charcoal-header-height - 65px; }
-  nav { display: none; }
+  section {
+    max-width: none;
+  	margin-top: 0;
+  	.content { display: block; }
+  	.sidebar { display: none; }
+  }
   footer {
       .wrapper {
         flex-wrap: wrap;
         .footer-col { width: 100%; }
       }
+  }
+  .wrapper {
+    max-width: none;
+  }
+  
+  .about_image {
+    display: block;
+    align-items: stretch;
+    
+    .about_image_col { float: none; }
+    .about_image_content { margin-left: auto; }
+    .about_image_image {
+      margin-left: 10%;
+      margin-right: 10%;
+      width: 80%;
+      border-radius: 15px;
+    }
   }
 }
