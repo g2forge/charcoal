@@ -162,6 +162,13 @@ user@localhost ~/charcoal
 $ gem push ./jekyll-theme-charcoal-<VERSION>.gem
 ```
 
+After this you will need to:
+
+* Git tag the release
+* Update the [gemspec](jekyll-theme-charcoal.gemspec) version
+* Update the [maven](pom.xml) version
+* Add a new milestone on github and any issue tracking systems
+
 # Inspiration
 
 This theme is based on the following:
