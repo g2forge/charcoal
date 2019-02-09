@@ -10,7 +10,9 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # Charcoal settings
 author_name: Greg Gibeling
 author_url: https://www.gdgib.com
+bare: false
 toc: true
+credits: true
 
 # Blog settings
 show_excerpts: true

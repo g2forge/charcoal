@@ -6,17 +6,35 @@
 			{% include header.html %}
 			<div class="wrapper">
 				<section>
+					{% if page.bare == nil %}
+						{% assign bare = site.bare %}
+					{% else %}
+						{% assign bare = page.bare %}
+					{% endif %}
+					{% if page.credits == nil %}
+						{% assign credits = site.credits %}
+					{% else %}
+						{% assign credits = page.credits %}
+					{% endif %}
+					{% if page.toc == nil %}
+						{% assign toc = site.toc %}
+					{% else %}
+						{% assign toc = page.toc %}
+					{% endif %}
+					
+					{% unless bare %}
 					<div id="title">
 						<h1>{{ page.title }}</h1>
 						<hr>
-						{% unless page.bare %}
-						<span class="credits left">By <a href="{{ page.author_url | default: site.author_url }}">{{ page.author_name | default: site.author_name }}</a></span>
-						<span class="credits right">{{ page.date | date: date_format }}</span>
-						{% endunless %}
+						{% if credits %}
+							<span class="credits left">By <a href="{{ page.author_url | default: site.author_url }}">{{ page.author_name | default: site.author_name }}</a></span>
+							<span class="credits right">{{ page.date | date: date_format }}</span>
+						{% endif %}
 					</div>
+					{% endunless %}
 	
 					<div class="content">
-						{% unless page.bare %}{% assign generate_toc = page.toc | default: site.toc %}{% if generate_toc %}
+						{% unless bare %}{% if toc %}
 							<div class="sidebar">
 								<h1 id="contents">Contents</h1>
 								{% include toc.html html=content %}
